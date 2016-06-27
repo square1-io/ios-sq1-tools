@@ -1,29 +1,14 @@
 # Square1 Tool (Objective-C) #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This library contains a group of utilities, helpers and categories that can be use in the different iOS projects we develope.
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Configuration ###
 
-### How do I get set up? ###
+Some classes require a parameter inside the Info.plist file of our project/target to work properly.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* **CoreDataManager**: Requires _"SQ1Tools-CoreDataModelName"_ parameter setting the Core Data model name that will be used.
 
-### Contribution guidelines ###
+* **UUID**: Requires _"SQ1Tools-UUIDAccountName"_ parameter setting the name of the Keychain account name used to store the UUID.
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* **NSDate+Square1 and NSString+Square1**: (OPTIONAL) _"SQ1Tools-TimeZone"_ paremeter setting the TimeZone for date conversion. Default el GMT.

@@ -7,13 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		201DDD5E1D210C9D003712B4 /* SQ1Tools-ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD5D1D210C9D003712B4 /* SQ1Tools-ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201DDD5E1D210C9D003712B4 /* SQ1Tools_ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD5D1D210C9D003712B4 /* SQ1Tools_ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		201DDD891D212170003712B4 /* NSDate+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD7E1D212170003712B4 /* NSDate+Square1.h */; };
+		201DDD8A1D212170003712B4 /* NSDate+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD7F1D212170003712B4 /* NSDate+Square1.m */; };
+		201DDD8B1D212170003712B4 /* NSString+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD801D212170003712B4 /* NSString+Square1.h */; };
+		201DDD8C1D212170003712B4 /* NSString+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD811D212170003712B4 /* NSString+Square1.m */; };
+		201DDD8D1D212170003712B4 /* UIColor+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD821D212170003712B4 /* UIColor+Square1.h */; };
+		201DDD8E1D212170003712B4 /* UIColor+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD831D212170003712B4 /* UIColor+Square1.m */; };
+		201DDD8F1D212170003712B4 /* RemoteNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD851D212170003712B4 /* RemoteNotifications.h */; };
+		201DDD901D212170003712B4 /* RemoteNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD861D212170003712B4 /* RemoteNotifications.m */; };
+		201DDD911D212170003712B4 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD871D212170003712B4 /* UUID.h */; };
+		201DDD921D212170003712B4 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD881D212170003712B4 /* UUID.m */; };
+		201DDD951D21219E003712B4 /* UIView+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD931D21219E003712B4 /* UIView+Square1.h */; };
+		201DDD961D21219E003712B4 /* UIView+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD941D21219E003712B4 /* UIView+Square1.m */; };
+		201DDD991D21358A003712B4 /* UITableView+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD971D21358A003712B4 /* UITableView+Square1.h */; };
+		201DDD9A1D21358A003712B4 /* UITableView+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD981D21358A003712B4 /* UITableView+Square1.m */; };
+		201DDD9D1D213757003712B4 /* NSNumber+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD9B1D213757003712B4 /* NSNumber+Square1.h */; };
+		201DDD9E1D213757003712B4 /* NSNumber+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD9C1D213757003712B4 /* NSNumber+Square1.m */; };
+		201DDDA11D213F68003712B4 /* NSData+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD9F1D213F68003712B4 /* NSData+Square1.h */; };
+		201DDDA21D213F68003712B4 /* NSData+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA01D213F68003712B4 /* NSData+Square1.m */; };
+		201DDDA61D21435E003712B4 /* ResizedService.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA41D21435E003712B4 /* ResizedService.h */; };
+		201DDDA71D21435E003712B4 /* ResizedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA51D21435E003712B4 /* ResizedService.m */; };
+		201DDDAA1D214511003712B4 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA81D214511003712B4 /* CoreDataManager.h */; };
+		201DDDAB1D214511003712B4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA91D214511003712B4 /* CoreDataManager.m */; };
+		201DDDAE1D215F08003712B4 /* NSDictionary+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */; };
+		201DDDAF1D215F08003712B4 /* NSDictionary+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */; };
+		201DDDB31D21648C003712B4 /* ReplaceRootControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */; };
+		201DDDB41D21648C003712B4 /* ReplaceRootControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		201DDD5A1D210C9D003712B4 /* SQ1Tools-ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "SQ1Tools-ObjC.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		201DDD5D1D210C9D003712B4 /* SQ1Tools-ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQ1Tools-ObjC.h"; sourceTree = "<group>"; };
+		201DDD5A1D210C9D003712B4 /* SQ1Tools_ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQ1Tools_ObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		201DDD5D1D210C9D003712B4 /* SQ1Tools_ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQ1Tools_ObjC.h; sourceTree = "<group>"; };
 		201DDD5F1D210C9D003712B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201DDD7E1D212170003712B4 /* NSDate+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Square1.h"; sourceTree = "<group>"; };
+		201DDD7F1D212170003712B4 /* NSDate+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Square1.m"; sourceTree = "<group>"; };
+		201DDD801D212170003712B4 /* NSString+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Square1.h"; sourceTree = "<group>"; };
+		201DDD811D212170003712B4 /* NSString+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Square1.m"; sourceTree = "<group>"; };
+		201DDD821D212170003712B4 /* UIColor+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Square1.h"; sourceTree = "<group>"; };
+		201DDD831D212170003712B4 /* UIColor+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Square1.m"; sourceTree = "<group>"; };
+		201DDD851D212170003712B4 /* RemoteNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteNotifications.h; sourceTree = "<group>"; };
+		201DDD861D212170003712B4 /* RemoteNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteNotifications.m; sourceTree = "<group>"; };
+		201DDD871D212170003712B4 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		201DDD881D212170003712B4 /* UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
+		201DDD931D21219E003712B4 /* UIView+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Square1.h"; sourceTree = "<group>"; };
+		201DDD941D21219E003712B4 /* UIView+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Square1.m"; sourceTree = "<group>"; };
+		201DDD971D21358A003712B4 /* UITableView+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Square1.h"; sourceTree = "<group>"; };
+		201DDD981D21358A003712B4 /* UITableView+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Square1.m"; sourceTree = "<group>"; };
+		201DDD9B1D213757003712B4 /* NSNumber+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Square1.h"; sourceTree = "<group>"; };
+		201DDD9C1D213757003712B4 /* NSNumber+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Square1.m"; sourceTree = "<group>"; };
+		201DDD9F1D213F68003712B4 /* NSData+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Square1.h"; sourceTree = "<group>"; };
+		201DDDA01D213F68003712B4 /* NSData+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Square1.m"; sourceTree = "<group>"; };
+		201DDDA41D21435E003712B4 /* ResizedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizedService.h; sourceTree = "<group>"; };
+		201DDDA51D21435E003712B4 /* ResizedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizedService.m; sourceTree = "<group>"; };
+		201DDDA81D214511003712B4 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		201DDDA91D214511003712B4 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Square1.h"; sourceTree = "<group>"; };
+		201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Square1.m"; sourceTree = "<group>"; };
+		201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceRootControllerSegue.h; sourceTree = "<group>"; };
+		201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceRootControllerSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +90,7 @@
 		201DDD5B1D210C9D003712B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				201DDD5A1D210C9D003712B4 /* SQ1Tools-ObjC.framework */,
+				201DDD5A1D210C9D003712B4 /* SQ1Tools_ObjC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +98,76 @@
 		201DDD5C1D210C9D003712B4 /* SQ1Tools-ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				201DDD5D1D210C9D003712B4 /* SQ1Tools-ObjC.h */,
+				201DDD7C1D212170003712B4 /* Source */,
+				201DDD5D1D210C9D003712B4 /* SQ1Tools_ObjC.h */,
 				201DDD5F1D210C9D003712B4 /* Info.plist */,
 			);
 			path = "SQ1Tools-ObjC";
+			sourceTree = "<group>";
+		};
+		201DDD7C1D212170003712B4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				201DDDB01D21646F003712B4 /* Segue */,
+				201DDDA31D214334003712B4 /* Utils */,
+				201DDD7D1D212170003712B4 /* Categories */,
+				201DDD841D212170003712B4 /* Helpers */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		201DDD7D1D212170003712B4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				201DDD7E1D212170003712B4 /* NSDate+Square1.h */,
+				201DDD7F1D212170003712B4 /* NSDate+Square1.m */,
+				201DDD801D212170003712B4 /* NSString+Square1.h */,
+				201DDD811D212170003712B4 /* NSString+Square1.m */,
+				201DDD821D212170003712B4 /* UIColor+Square1.h */,
+				201DDD831D212170003712B4 /* UIColor+Square1.m */,
+				201DDD931D21219E003712B4 /* UIView+Square1.h */,
+				201DDD941D21219E003712B4 /* UIView+Square1.m */,
+				201DDD971D21358A003712B4 /* UITableView+Square1.h */,
+				201DDD981D21358A003712B4 /* UITableView+Square1.m */,
+				201DDD9B1D213757003712B4 /* NSNumber+Square1.h */,
+				201DDD9C1D213757003712B4 /* NSNumber+Square1.m */,
+				201DDD9F1D213F68003712B4 /* NSData+Square1.h */,
+				201DDDA01D213F68003712B4 /* NSData+Square1.m */,
+				201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */,
+				201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		201DDD841D212170003712B4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				201DDD851D212170003712B4 /* RemoteNotifications.h */,
+				201DDD861D212170003712B4 /* RemoteNotifications.m */,
+				201DDD871D212170003712B4 /* UUID.h */,
+				201DDD881D212170003712B4 /* UUID.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		201DDDA31D214334003712B4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				201DDDA41D21435E003712B4 /* ResizedService.h */,
+				201DDDA51D21435E003712B4 /* ResizedService.m */,
+				201DDDA81D214511003712B4 /* CoreDataManager.h */,
+				201DDDA91D214511003712B4 /* CoreDataManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		201DDDB01D21646F003712B4 /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */,
+				201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */,
+			);
+			path = Segue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,16 +177,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201DDD5E1D210C9D003712B4 /* SQ1Tools-ObjC.h in Headers */,
+				201DDD9D1D213757003712B4 /* NSNumber+Square1.h in Headers */,
+				201DDD891D212170003712B4 /* NSDate+Square1.h in Headers */,
+				201DDD991D21358A003712B4 /* UITableView+Square1.h in Headers */,
+				201DDD911D212170003712B4 /* UUID.h in Headers */,
+				201DDDA11D213F68003712B4 /* NSData+Square1.h in Headers */,
+				201DDDA61D21435E003712B4 /* ResizedService.h in Headers */,
+				201DDD8F1D212170003712B4 /* RemoteNotifications.h in Headers */,
+				201DDD951D21219E003712B4 /* UIView+Square1.h in Headers */,
+				201DDD8D1D212170003712B4 /* UIColor+Square1.h in Headers */,
+				201DDDB31D21648C003712B4 /* ReplaceRootControllerSegue.h in Headers */,
+				201DDDAA1D214511003712B4 /* CoreDataManager.h in Headers */,
+				201DDDAE1D215F08003712B4 /* NSDictionary+Square1.h in Headers */,
+				201DDD8B1D212170003712B4 /* NSString+Square1.h in Headers */,
+				201DDD5E1D210C9D003712B4 /* SQ1Tools_ObjC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		201DDD591D210C9D003712B4 /* SQ1Tools-ObjC */ = {
+		201DDD591D210C9D003712B4 /* SQ1Tools_ObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 201DDD621D210C9D003712B4 /* Build configuration list for PBXNativeTarget "SQ1Tools-ObjC" */;
+			buildConfigurationList = 201DDD621D210C9D003712B4 /* Build configuration list for PBXNativeTarget "SQ1Tools_ObjC" */;
 			buildPhases = (
 				201DDD551D210C9D003712B4 /* Sources */,
 				201DDD561D210C9D003712B4 /* Frameworks */,
@@ -79,9 +210,9 @@
 			);
 			dependencies = (
 			);
-			name = "SQ1Tools-ObjC";
+			name = SQ1Tools_ObjC;
 			productName = "SQ1Tools-ObjC";
-			productReference = 201DDD5A1D210C9D003712B4 /* SQ1Tools-ObjC.framework */;
+			productReference = 201DDD5A1D210C9D003712B4 /* SQ1Tools_ObjC.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				201DDD591D210C9D003712B4 /* SQ1Tools-ObjC */,
+				201DDD591D210C9D003712B4 /* SQ1Tools_ObjC */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +261,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201DDD921D212170003712B4 /* UUID.m in Sources */,
+				201DDDAF1D215F08003712B4 /* NSDictionary+Square1.m in Sources */,
+				201DDD8C1D212170003712B4 /* NSString+Square1.m in Sources */,
+				201DDD8E1D212170003712B4 /* UIColor+Square1.m in Sources */,
+				201DDD9A1D21358A003712B4 /* UITableView+Square1.m in Sources */,
+				201DDD9E1D213757003712B4 /* NSNumber+Square1.m in Sources */,
+				201DDDB41D21648C003712B4 /* ReplaceRootControllerSegue.m in Sources */,
+				201DDDAB1D214511003712B4 /* CoreDataManager.m in Sources */,
+				201DDD961D21219E003712B4 /* UIView+Square1.m in Sources */,
+				201DDDA71D21435E003712B4 /* ResizedService.m in Sources */,
+				201DDD901D212170003712B4 /* RemoteNotifications.m in Sources */,
+				201DDDA21D213F68003712B4 /* NSData+Square1.m in Sources */,
+				201DDD8A1D212170003712B4 /* NSDate+Square1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +373,14 @@
 		201DDD631D210C9D003712B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SQ1Tools-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.square1.SQ1Tools-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -245,12 +391,14 @@
 		201DDD641D210C9D003712B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "SQ1Tools-ObjC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.square1.SQ1Tools-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -270,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		201DDD621D210C9D003712B4 /* Build configuration list for PBXNativeTarget "SQ1Tools-ObjC" */ = {
+		201DDD621D210C9D003712B4 /* Build configuration list for PBXNativeTarget "SQ1Tools_ObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				201DDD631D210C9D003712B4 /* Debug */,
