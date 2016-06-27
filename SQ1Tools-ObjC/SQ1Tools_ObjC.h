@@ -28,6 +28,8 @@ FOUNDATION_EXPORT const unsigned char SQ1Tools_ObjCVersionString[];
 #import <SQ1Tools_ObjC/UIColor+Square1.h>
 #import <SQ1Tools_ObjC/UIView+Square1.h>
 #import <SQ1Tools_ObjC/UITableView+Square1.h>
+#import <SQ1Tools_ObjC/NSDictionary+Square1.h>
+#import <SQ1Tools_ObjC/NSData+Square1.h>
 
 // Utils
 
