@@ -6,8 +6,8 @@
 //  Copyright © 2016 Square1. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+@import Foundation;
+@import CoreData;
 
 @interface CoreDataManager : NSObject
 
