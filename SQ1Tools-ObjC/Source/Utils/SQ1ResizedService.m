@@ -1,29 +1,28 @@
 //
-//  ResizedService.m
+//  SQ1ResizedService.m
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
 //  Copyright © 2016 Square1. All rights reserved.
 //
 
-#import "ResizedService.h"
+#import "SQ1ResizedService.h"
 #import "NSString+Square1.h"
+#import "SQ1Constants.h"
 
-#define kDefaultHost @"https://img.resized.co/"
-
-@interface ResizedService()
+@interface SQ1ResizedService()
 
 @property NSString *key;
 @property NSString *secret;
 
 @end
 
-@implementation ResizedService
+@implementation SQ1ResizedService
 
 + (instancetype)serviceWithKey:(NSString *)key
                         secret:(NSString *)secret
 {
-  return [[ResizedService alloc] initWithKey:key secret:secret];
+  return [[SQ1ResizedService alloc] initWithKey:key secret:secret];
 }
 
 
@@ -31,7 +30,7 @@
                      secret:(NSString *)secret
 {
   if (self = [super init]) {
-    _host = kDefaultHost;
+    _host = kResizedDefaultHost;
     _key = key;
     _secret = secret;
   }

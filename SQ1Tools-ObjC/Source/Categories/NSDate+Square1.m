@@ -7,8 +7,7 @@
 //
 
 #import "NSDate+Square1.h"
-
-#define kTimeZoneKey @"SQ1Tools-TimeZone"
+#import "SQ1Constants.h"
 
 @implementation NSDate (Square1)
 

@@ -1,5 +1,5 @@
 //
-//  UUID.h
+//  SQ1UUID.h
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
@@ -9,7 +9,7 @@
 @import Foundation;
 @import Security;
 
-@interface UUID : NSObject
+@interface SQ1UUID : NSObject
 
 @property (nonatomic, readonly) OSStatus lastErrorStatus;
 

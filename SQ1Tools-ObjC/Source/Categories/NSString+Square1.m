@@ -9,8 +9,7 @@
 #import "NSString+Square1.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "NSData+Square1.h"
-
-#define kTimeZoneKey @"SQ1Tools-TimeZone"
+#import "SQ1Constants.h"
 
 @implementation NSString (Square1)
 

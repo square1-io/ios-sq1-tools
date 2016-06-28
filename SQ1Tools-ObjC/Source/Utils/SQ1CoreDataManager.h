@@ -1,5 +1,5 @@
 //
-//  CoreDataManager.h
+//  SQ1CoreDataManager.h
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
@@ -9,12 +9,12 @@
 @import Foundation;
 @import CoreData;
 
-@interface CoreDataManager : NSObject
+@interface SQ1CoreDataManager : NSObject
 
 
 @property (nonatomic, strong, readonly) NSManagedObjectContext *context;
 
-+ (CoreDataManager *)sharedManager;
++ (SQ1CoreDataManager *)sharedManager;
 
 - (void)saveContextAndWait:(BOOL)wait
                 completion:(void (^)(NSError *error))completion;

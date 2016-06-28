@@ -1,16 +1,15 @@
 //
-//  CoreDataManager.m
+//  SQ1CoreDataManager.m
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
 //  Copyright © 2016 Square1. All rights reserved.
 //
 
-#import "CoreDataManager.h"
+#import "SQ1CoreDataManager.h"
+#import "SQ1Constants.h"
 
-#define kModelNameKey @"SQ1Tools-CoreDataModelName"
-
-@interface CoreDataManager()
+@interface SQ1CoreDataManager()
 
 @property (nonatomic) NSString *modelName;
 
@@ -26,18 +25,18 @@
 
 @end
 
-@implementation CoreDataManager
+@implementation SQ1CoreDataManager
 
-static CoreDataManager *coreDataManager;
+static SQ1CoreDataManager *coreDataManager;
 
 #pragma mark - Lifecycle and setup
 
-+ (CoreDataManager *)sharedManager;
++ (SQ1CoreDataManager *)sharedManager;
 {
   if (!coreDataManager) {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-      coreDataManager = [[CoreDataManager alloc] init];
+      coreDataManager = [[SQ1CoreDataManager alloc] init];
     });
   }
   

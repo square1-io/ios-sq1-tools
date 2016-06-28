@@ -10,10 +10,14 @@
 
 @interface NSData (Square1)
 
-- (NSString*)sq1_hexString;
-
++ (NSData *)sq1_randomDataWithLength:(NSUInteger)length;
 + (NSData *)sq1_dataWithBase64EncodedString:(NSString *)string;
+
+- (NSString *)sq1_stringValue;
+- (NSString *)sq1_hexString;
 - (NSString *)sq1_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
 - (NSString *)sq1_base64EncodedString;
+
+- (NSData *)sq1_MD5Digest;
 
 @end

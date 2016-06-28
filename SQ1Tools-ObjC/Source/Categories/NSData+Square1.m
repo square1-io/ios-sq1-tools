@@ -7,31 +7,33 @@
 //
 
 #import "NSData+Square1.h"
+#import <CommonCrypto/CommonDigest.h>
 
 @implementation NSData (Square1)
 
++ (NSData *)sq1_randomDataWithLength:(NSUInteger)length
+{
+  NSMutableData *data = [NSMutableData dataWithLength:length];
+  if (0 != SecRandomCopyBytes(kSecRandomDefault, length, (uint8_t *) data.mutableBytes)) return nil;
+  return [data copy];
+}
+
+- (NSString *)sq1_stringValue
+{
+  return [[NSString alloc] initWithBytes:[self bytes] length:[self length] encoding:NSUTF8StringEncoding];
+}
+
 - (NSString*)sq1_hexString
 {
-  NSUInteger length = self.length;
-  unichar* hexChars = (unichar*)malloc(sizeof(unichar) * (length*2));
-  unsigned char* bytes = (unsigned char*)self.bytes;
-  
-  for (NSUInteger i = 0; i < length; i++) {
-    unichar c = bytes[i] / 16;
-    if (c < 10) c += '0';
-    else c += 'a' - 10;
-    hexChars[i*2] = c;
-    c = bytes[i] % 16;
-    if (c < 10) c += '0';
-    else c += 'a' - 10;
-    hexChars[i*2+1] = c;
+  NSMutableString *stringBuffer = [NSMutableString stringWithCapacity:([self length] * 2)];
+  const unsigned char *dataBuffer = [self bytes];
+  int i;
+  for (i = 0; i < [self length]; ++i) {
+    [stringBuffer appendFormat:@"%02lx", (unsigned long)dataBuffer[i]];
   }
-  
-  NSString* retVal = [[NSString alloc] initWithCharactersNoCopy:hexChars
-                                                         length:length*2
-                                                   freeWhenDone:YES];
-  return retVal;
+  return [stringBuffer copy];
 }
+
 
 + (NSData *)sq1_dataWithBase64EncodedString:(NSString *)string
 {
@@ -153,6 +155,13 @@
 - (NSString *)sq1_base64EncodedString
 {
   return [self sq1_base64EncodedStringWithWrapWidth:0];
+}
+
+- (NSData *)sq1_MD5Digest
+{
+  unsigned char result[CC_MD5_DIGEST_LENGTH];
+  CC_MD5([self bytes], (CC_LONG)[self length], result);
+  return [NSData dataWithBytes:result length:CC_MD5_DIGEST_LENGTH];
 }
 
 @end

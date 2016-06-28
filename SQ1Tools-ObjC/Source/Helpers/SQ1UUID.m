@@ -1,16 +1,15 @@
 //
-//  UUID.m
+//  SQ1UUID.m
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
 //  Copyright © 2016 Square1. All rights reserved.
 //
 
-#import "UUID.h"
+#import "SQ1UUID.h"
+#import "SQ1Constants.h"
 
-#define kAccountNameKey @"SQ1Tools-UUIDAccountName"
-
-@interface UUID ()
+@interface SQ1UUID ()
 
 @property (nonatomic) OSStatus lastErrorStatus;
 @property (nonatomic) NSString *accountName;
@@ -18,11 +17,11 @@
 @end
 
 
-@implementation UUID
+@implementation SQ1UUID
 
 + (instancetype)sharedInstance
 {
-  static UUID *_instance = nil;
+  static SQ1UUID *_instance = nil;
   static dispatch_once_t oncePredicate;
   dispatch_once(&oncePredicate, ^{
     _instance = [[self alloc] init];

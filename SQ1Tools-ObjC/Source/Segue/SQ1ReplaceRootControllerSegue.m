@@ -1,14 +1,14 @@
 //
-//  ReplaceRootControllerSegue.m
+//  SQ1ReplaceRootControllerSegue.m
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
 //  Copyright © 2016 Square1. All rights reserved.
 //
 
-#import "ReplaceRootControllerSegue.h"
+#import "SQ1ReplaceRootControllerSegue.h"
 
-@implementation ReplaceRootControllerSegue
+@implementation SQ1ReplaceRootControllerSegue
 
 - (void)perform
 {

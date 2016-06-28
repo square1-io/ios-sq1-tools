@@ -1,5 +1,5 @@
 //
-//  ResizedService.h
+//  SQ1ResizedService.h
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface ResizedService : NSObject
+@interface SQ1ResizedService : NSObject
 
 @property (nonatomic) NSString * _Nonnull host;
 @property (nonatomic) NSString * _Nullable defaultImageURL;

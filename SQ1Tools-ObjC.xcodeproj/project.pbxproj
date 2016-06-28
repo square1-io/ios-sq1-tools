@@ -14,10 +14,10 @@
 		201DDD8C1D212170003712B4 /* NSString+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD811D212170003712B4 /* NSString+Square1.m */; };
 		201DDD8D1D212170003712B4 /* UIColor+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD821D212170003712B4 /* UIColor+Square1.h */; };
 		201DDD8E1D212170003712B4 /* UIColor+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD831D212170003712B4 /* UIColor+Square1.m */; };
-		201DDD8F1D212170003712B4 /* RemoteNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD851D212170003712B4 /* RemoteNotifications.h */; };
-		201DDD901D212170003712B4 /* RemoteNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD861D212170003712B4 /* RemoteNotifications.m */; };
-		201DDD911D212170003712B4 /* UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD871D212170003712B4 /* UUID.h */; };
-		201DDD921D212170003712B4 /* UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD881D212170003712B4 /* UUID.m */; };
+		201DDD8F1D212170003712B4 /* SQ1RemoteNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD851D212170003712B4 /* SQ1RemoteNotifications.h */; };
+		201DDD901D212170003712B4 /* SQ1RemoteNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD861D212170003712B4 /* SQ1RemoteNotifications.m */; };
+		201DDD911D212170003712B4 /* SQ1UUID.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD871D212170003712B4 /* SQ1UUID.h */; };
+		201DDD921D212170003712B4 /* SQ1UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD881D212170003712B4 /* SQ1UUID.m */; };
 		201DDD951D21219E003712B4 /* UIView+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD931D21219E003712B4 /* UIView+Square1.h */; };
 		201DDD961D21219E003712B4 /* UIView+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD941D21219E003712B4 /* UIView+Square1.m */; };
 		201DDD991D21358A003712B4 /* UITableView+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD971D21358A003712B4 /* UITableView+Square1.h */; };
@@ -26,14 +26,16 @@
 		201DDD9E1D213757003712B4 /* NSNumber+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD9C1D213757003712B4 /* NSNumber+Square1.m */; };
 		201DDDA11D213F68003712B4 /* NSData+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD9F1D213F68003712B4 /* NSData+Square1.h */; };
 		201DDDA21D213F68003712B4 /* NSData+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA01D213F68003712B4 /* NSData+Square1.m */; };
-		201DDDA61D21435E003712B4 /* ResizedService.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA41D21435E003712B4 /* ResizedService.h */; };
-		201DDDA71D21435E003712B4 /* ResizedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA51D21435E003712B4 /* ResizedService.m */; };
-		201DDDAA1D214511003712B4 /* CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA81D214511003712B4 /* CoreDataManager.h */; };
-		201DDDAB1D214511003712B4 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA91D214511003712B4 /* CoreDataManager.m */; };
+		201DDDA61D21435E003712B4 /* SQ1ResizedService.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA41D21435E003712B4 /* SQ1ResizedService.h */; };
+		201DDDA71D21435E003712B4 /* SQ1ResizedService.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA51D21435E003712B4 /* SQ1ResizedService.m */; };
+		201DDDAA1D214511003712B4 /* SQ1CoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDA81D214511003712B4 /* SQ1CoreDataManager.h */; };
+		201DDDAB1D214511003712B4 /* SQ1CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDA91D214511003712B4 /* SQ1CoreDataManager.m */; };
 		201DDDAE1D215F08003712B4 /* NSDictionary+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */; };
 		201DDDAF1D215F08003712B4 /* NSDictionary+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */; };
-		201DDDB31D21648C003712B4 /* ReplaceRootControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */; };
-		201DDDB41D21648C003712B4 /* ReplaceRootControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */; };
+		201DDDB31D21648C003712B4 /* SQ1ReplaceRootControllerSegue.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDDB11D21648C003712B4 /* SQ1ReplaceRootControllerSegue.h */; };
+		201DDDB41D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDB21D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m */; };
+		206A16881D228B4D00607FE7 /* SQ1Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = 206A16861D228B4D00607FE7 /* SQ1Basics.h */; };
+		206A16891D228B4D00607FE7 /* SQ1Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A16871D228B4D00607FE7 /* SQ1Basics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,10 +48,10 @@
 		201DDD811D212170003712B4 /* NSString+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Square1.m"; sourceTree = "<group>"; };
 		201DDD821D212170003712B4 /* UIColor+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Square1.h"; sourceTree = "<group>"; };
 		201DDD831D212170003712B4 /* UIColor+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Square1.m"; sourceTree = "<group>"; };
-		201DDD851D212170003712B4 /* RemoteNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteNotifications.h; sourceTree = "<group>"; };
-		201DDD861D212170003712B4 /* RemoteNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteNotifications.m; sourceTree = "<group>"; };
-		201DDD871D212170003712B4 /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
-		201DDD881D212170003712B4 /* UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUID.m; sourceTree = "<group>"; };
+		201DDD851D212170003712B4 /* SQ1RemoteNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1RemoteNotifications.h; sourceTree = "<group>"; };
+		201DDD861D212170003712B4 /* SQ1RemoteNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1RemoteNotifications.m; sourceTree = "<group>"; };
+		201DDD871D212170003712B4 /* SQ1UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1UUID.h; sourceTree = "<group>"; };
+		201DDD881D212170003712B4 /* SQ1UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1UUID.m; sourceTree = "<group>"; };
 		201DDD931D21219E003712B4 /* UIView+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Square1.h"; sourceTree = "<group>"; };
 		201DDD941D21219E003712B4 /* UIView+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Square1.m"; sourceTree = "<group>"; };
 		201DDD971D21358A003712B4 /* UITableView+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Square1.h"; sourceTree = "<group>"; };
@@ -58,14 +60,17 @@
 		201DDD9C1D213757003712B4 /* NSNumber+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Square1.m"; sourceTree = "<group>"; };
 		201DDD9F1D213F68003712B4 /* NSData+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Square1.h"; sourceTree = "<group>"; };
 		201DDDA01D213F68003712B4 /* NSData+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Square1.m"; sourceTree = "<group>"; };
-		201DDDA41D21435E003712B4 /* ResizedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResizedService.h; sourceTree = "<group>"; };
-		201DDDA51D21435E003712B4 /* ResizedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResizedService.m; sourceTree = "<group>"; };
-		201DDDA81D214511003712B4 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
-		201DDDA91D214511003712B4 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		201DDDA41D21435E003712B4 /* SQ1ResizedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1ResizedService.h; sourceTree = "<group>"; };
+		201DDDA51D21435E003712B4 /* SQ1ResizedService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1ResizedService.m; sourceTree = "<group>"; };
+		201DDDA81D214511003712B4 /* SQ1CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1CoreDataManager.h; sourceTree = "<group>"; };
+		201DDDA91D214511003712B4 /* SQ1CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1CoreDataManager.m; sourceTree = "<group>"; };
 		201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Square1.h"; sourceTree = "<group>"; };
 		201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Square1.m"; sourceTree = "<group>"; };
-		201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceRootControllerSegue.h; sourceTree = "<group>"; };
-		201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceRootControllerSegue.m; sourceTree = "<group>"; };
+		201DDDB11D21648C003712B4 /* SQ1ReplaceRootControllerSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1ReplaceRootControllerSegue.h; sourceTree = "<group>"; };
+		201DDDB21D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1ReplaceRootControllerSegue.m; sourceTree = "<group>"; };
+		206A16851D22692200607FE7 /* SQ1Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQ1Constants.h; sourceTree = "<group>"; };
+		206A16861D228B4D00607FE7 /* SQ1Basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1Basics.h; sourceTree = "<group>"; };
+		206A16871D228B4D00607FE7 /* SQ1Basics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1Basics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 		201DDD7C1D212170003712B4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				206A16841D22691500607FE7 /* Supporting Files */,
 				201DDDB01D21646F003712B4 /* Segue */,
 				201DDDA31D214334003712B4 /* Utils */,
 				201DDD7D1D212170003712B4 /* Categories */,
@@ -142,10 +148,12 @@
 		201DDD841D212170003712B4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				201DDD851D212170003712B4 /* RemoteNotifications.h */,
-				201DDD861D212170003712B4 /* RemoteNotifications.m */,
-				201DDD871D212170003712B4 /* UUID.h */,
-				201DDD881D212170003712B4 /* UUID.m */,
+				201DDD851D212170003712B4 /* SQ1RemoteNotifications.h */,
+				201DDD861D212170003712B4 /* SQ1RemoteNotifications.m */,
+				201DDD871D212170003712B4 /* SQ1UUID.h */,
+				201DDD881D212170003712B4 /* SQ1UUID.m */,
+				206A16861D228B4D00607FE7 /* SQ1Basics.h */,
+				206A16871D228B4D00607FE7 /* SQ1Basics.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -153,10 +161,10 @@
 		201DDDA31D214334003712B4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				201DDDA41D21435E003712B4 /* ResizedService.h */,
-				201DDDA51D21435E003712B4 /* ResizedService.m */,
-				201DDDA81D214511003712B4 /* CoreDataManager.h */,
-				201DDDA91D214511003712B4 /* CoreDataManager.m */,
+				201DDDA41D21435E003712B4 /* SQ1ResizedService.h */,
+				201DDDA51D21435E003712B4 /* SQ1ResizedService.m */,
+				201DDDA81D214511003712B4 /* SQ1CoreDataManager.h */,
+				201DDDA91D214511003712B4 /* SQ1CoreDataManager.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -164,10 +172,18 @@
 		201DDDB01D21646F003712B4 /* Segue */ = {
 			isa = PBXGroup;
 			children = (
-				201DDDB11D21648C003712B4 /* ReplaceRootControllerSegue.h */,
-				201DDDB21D21648C003712B4 /* ReplaceRootControllerSegue.m */,
+				201DDDB11D21648C003712B4 /* SQ1ReplaceRootControllerSegue.h */,
+				201DDDB21D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m */,
 			);
 			path = Segue;
+			sourceTree = "<group>";
+		};
+		206A16841D22691500607FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				206A16851D22692200607FE7 /* SQ1Constants.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,14 +196,15 @@
 				201DDD9D1D213757003712B4 /* NSNumber+Square1.h in Headers */,
 				201DDD891D212170003712B4 /* NSDate+Square1.h in Headers */,
 				201DDD991D21358A003712B4 /* UITableView+Square1.h in Headers */,
-				201DDD911D212170003712B4 /* UUID.h in Headers */,
+				201DDD911D212170003712B4 /* SQ1UUID.h in Headers */,
 				201DDDA11D213F68003712B4 /* NSData+Square1.h in Headers */,
-				201DDDA61D21435E003712B4 /* ResizedService.h in Headers */,
-				201DDD8F1D212170003712B4 /* RemoteNotifications.h in Headers */,
+				201DDDA61D21435E003712B4 /* SQ1ResizedService.h in Headers */,
+				206A16881D228B4D00607FE7 /* SQ1Basics.h in Headers */,
+				201DDD8F1D212170003712B4 /* SQ1RemoteNotifications.h in Headers */,
 				201DDD951D21219E003712B4 /* UIView+Square1.h in Headers */,
 				201DDD8D1D212170003712B4 /* UIColor+Square1.h in Headers */,
-				201DDDB31D21648C003712B4 /* ReplaceRootControllerSegue.h in Headers */,
-				201DDDAA1D214511003712B4 /* CoreDataManager.h in Headers */,
+				201DDDB31D21648C003712B4 /* SQ1ReplaceRootControllerSegue.h in Headers */,
+				201DDDAA1D214511003712B4 /* SQ1CoreDataManager.h in Headers */,
 				201DDDAE1D215F08003712B4 /* NSDictionary+Square1.h in Headers */,
 				201DDD8B1D212170003712B4 /* NSString+Square1.h in Headers */,
 				201DDD5E1D210C9D003712B4 /* SQ1Tools_ObjC.h in Headers */,
@@ -261,17 +278,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				201DDD921D212170003712B4 /* UUID.m in Sources */,
+				201DDD921D212170003712B4 /* SQ1UUID.m in Sources */,
 				201DDDAF1D215F08003712B4 /* NSDictionary+Square1.m in Sources */,
 				201DDD8C1D212170003712B4 /* NSString+Square1.m in Sources */,
 				201DDD8E1D212170003712B4 /* UIColor+Square1.m in Sources */,
+				206A16891D228B4D00607FE7 /* SQ1Basics.m in Sources */,
 				201DDD9A1D21358A003712B4 /* UITableView+Square1.m in Sources */,
 				201DDD9E1D213757003712B4 /* NSNumber+Square1.m in Sources */,
-				201DDDB41D21648C003712B4 /* ReplaceRootControllerSegue.m in Sources */,
-				201DDDAB1D214511003712B4 /* CoreDataManager.m in Sources */,
+				201DDDB41D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m in Sources */,
+				201DDDAB1D214511003712B4 /* SQ1CoreDataManager.m in Sources */,
 				201DDD961D21219E003712B4 /* UIView+Square1.m in Sources */,
-				201DDDA71D21435E003712B4 /* ResizedService.m in Sources */,
-				201DDD901D212170003712B4 /* RemoteNotifications.m in Sources */,
+				201DDDA71D21435E003712B4 /* SQ1ResizedService.m in Sources */,
+				201DDD901D212170003712B4 /* SQ1RemoteNotifications.m in Sources */,
 				201DDDA21D213F68003712B4 /* NSData+Square1.m in Sources */,
 				201DDD8A1D212170003712B4 /* NSDate+Square1.m in Sources */,
 			);
@@ -425,6 +443,7 @@
 				201DDD641D210C9D003712B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

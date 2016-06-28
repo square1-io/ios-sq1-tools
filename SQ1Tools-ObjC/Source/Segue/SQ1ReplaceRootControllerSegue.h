@@ -1,5 +1,5 @@
 //
-//  ReplaceRootControllerSegue.h
+//  SQ1ReplaceRootControllerSegue.h
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
@@ -8,6 +8,6 @@
 
 @import UIKit;
 
-@interface ReplaceRootControllerSegue : UIStoryboardSegue
+@interface SQ1ReplaceRootControllerSegue : UIStoryboardSegue
 
 @end

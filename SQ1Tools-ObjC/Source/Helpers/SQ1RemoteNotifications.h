@@ -1,5 +1,5 @@
 //
-//  RemoteNotifications.h
+//  SQ1RemoteNotifications.h
 //  SQ1Tools-ObjC
 //
 //  Created by Rober Pastor on 27/6/16.
@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-@interface RemoteNotifications : NSObject
+@interface SQ1RemoteNotifications : NSObject
 
 + (void)registerForRemoteNotifications;
 

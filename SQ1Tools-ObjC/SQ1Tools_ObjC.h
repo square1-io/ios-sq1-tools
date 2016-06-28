@@ -16,9 +16,9 @@ FOUNDATION_EXPORT const unsigned char SQ1Tools_ObjCVersionString[];
 
 // Helpers
 
-#import <SQ1Tools_ObjC/UUID.h>
-#import <SQ1Tools_ObjC/RemoteNotifications.h>
-
+#import <SQ1Tools_ObjC/SQ1UUID.h>
+#import <SQ1Tools_ObjC/SQ1RemoteNotifications.h>
+#import <SQ1Tools_ObjC/SQ1Basics.h>
 
 // Categories
 
@@ -33,9 +33,9 @@ FOUNDATION_EXPORT const unsigned char SQ1Tools_ObjCVersionString[];
 
 // Utils
 
-#import <SQ1Tools_ObjC/ResizedService.h>
-#import <SQ1Tools_ObjC/CoreDataManager.h>
+#import <SQ1Tools_ObjC/SQ1ResizedService.h>
+#import <SQ1Tools_ObjC/SQ1CoreDataManager.h>
 
 // Segue
 
-#import <SQ1Tools_ObjC/ReplaceRootControllerSegue.h>
+#import <SQ1Tools_ObjC/SQ1ReplaceRootControllerSegue.h>

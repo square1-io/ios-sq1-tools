@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.platform = :ios
     s.name              = 'SQ1Tools-ObjC'
-    s.version           = '0.0.2'
+    s.version           = '0.0.3'
     s.summary           = 'This library contains a group of utilities, helpers and categories that can be use in the different iOS projects we develope.'
     s.homepage          = 'https://github.com/square1-io/ios-sq1-tools'
     s.license           = {
