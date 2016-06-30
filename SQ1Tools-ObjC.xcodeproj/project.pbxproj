@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2013CA8A1D2560450098066E /* UIImage+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 2013CA881D2560450098066E /* UIImage+Square1.h */; };
+		2013CA8B1D2560450098066E /* UIImage+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2013CA891D2560450098066E /* UIImage+Square1.m */; };
 		201DDD5E1D210C9D003712B4 /* SQ1Tools_ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD5D1D210C9D003712B4 /* SQ1Tools_ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201DDD891D212170003712B4 /* NSDate+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = 201DDD7E1D212170003712B4 /* NSDate+Square1.h */; };
 		201DDD8A1D212170003712B4 /* NSDate+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDD7F1D212170003712B4 /* NSDate+Square1.m */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2013CA881D2560450098066E /* UIImage+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Square1.h"; sourceTree = "<group>"; };
+		2013CA891D2560450098066E /* UIImage+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Square1.m"; sourceTree = "<group>"; };
 		201DDD5A1D210C9D003712B4 /* SQ1Tools_ObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQ1Tools_ObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		201DDD5D1D210C9D003712B4 /* SQ1Tools_ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQ1Tools_ObjC.h; sourceTree = "<group>"; };
 		201DDD5F1D210C9D003712B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				201DDDA01D213F68003712B4 /* NSData+Square1.m */,
 				201DDDAC1D215F08003712B4 /* NSDictionary+Square1.h */,
 				201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */,
+				2013CA881D2560450098066E /* UIImage+Square1.h */,
+				2013CA891D2560450098066E /* UIImage+Square1.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 				201DDD991D21358A003712B4 /* UITableView+Square1.h in Headers */,
 				201DDD911D212170003712B4 /* SQ1UUID.h in Headers */,
 				201DDDA11D213F68003712B4 /* NSData+Square1.h in Headers */,
+				2013CA8A1D2560450098066E /* UIImage+Square1.h in Headers */,
 				201DDDA61D21435E003712B4 /* SQ1ResizedService.h in Headers */,
 				206A16881D228B4D00607FE7 /* SQ1Basics.h in Headers */,
 				201DDD8F1D212170003712B4 /* SQ1RemoteNotifications.h in Headers */,
@@ -282,6 +289,7 @@
 				201DDDAF1D215F08003712B4 /* NSDictionary+Square1.m in Sources */,
 				201DDD8C1D212170003712B4 /* NSString+Square1.m in Sources */,
 				201DDD8E1D212170003712B4 /* UIColor+Square1.m in Sources */,
+				2013CA8B1D2560450098066E /* UIImage+Square1.m in Sources */,
 				206A16891D228B4D00607FE7 /* SQ1Basics.m in Sources */,
 				201DDD9A1D21358A003712B4 /* UITableView+Square1.m in Sources */,
 				201DDD9E1D213757003712B4 /* NSNumber+Square1.m in Sources */,
