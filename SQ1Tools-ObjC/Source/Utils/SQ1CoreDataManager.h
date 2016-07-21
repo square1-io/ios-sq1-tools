@@ -22,6 +22,8 @@
 - (NSManagedObject *)newObjectInContextWithEntityName:(NSString *)entityName;
 - (NSManagedObject *)newObjectOutOfContextWithEntityName:(NSString *)entityName;
 
+- (NSManagedObjectContext *)newChildContextWithConcurrencyType:(NSManagedObjectContextConcurrencyType)concurrencyType;
+
 - (void)deleteObject:(NSManagedObject *)object;
 
 - (void)deleteObject:(NSManagedObject *)object

@@ -146,6 +146,13 @@ static SQ1CoreDataManager *coreDataManager;
 
 #pragma mark - Public methods
 
+- (NSManagedObjectContext *)newChildContextWithConcurrencyType:(NSManagedObjectContextConcurrencyType)concurrencyType
+{
+  NSManagedObjectContext *moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:concurrencyType];
+  [moc setParentContext:_writerContext];
+  return moc;
+}
+
 - (void)saveContextAndWait:(BOOL)wait completion:(void (^)(NSError *))completion
 {
   if ([self managedObjectContextHasChanges:self.context] || [self managedObjectContextHasChanges:self.writerContext]) {
