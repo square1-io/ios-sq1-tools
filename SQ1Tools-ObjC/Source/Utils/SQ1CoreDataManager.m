@@ -74,12 +74,23 @@ static SQ1CoreDataManager *coreDataManager;
   NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @YES};
   
   NSError *error = nil;
-  NSPersistentStore *persistentStore = [self.psc addPersistentStoreWithType:NSSQLiteStoreType
-                                                              configuration:nil
-                                                                        URL:storeURL
-                                                                    options:options
-                                                                      error:&error];
-  NSAssert(persistentStore, @"Persistent Store is nil");
+  if(![self.psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
+    // Report any error we got.
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[NSLocalizedDescriptionKey] = @"Failed to initialize the application's saved data";
+    dict[NSLocalizedFailureReasonErrorKey] = error.localizedFailureReason;
+    dict[NSUnderlyingErrorKey] = error;
+    error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
+    
+    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    
+    // Delete the faulty data
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    [fileManager removeItemAtURL:storeURL error:&error];
+    
+    // Recreate persistent store
+    [self.psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error];
+  }
   
   _writerContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
   [_writerContext setPersistentStoreCoordinator:_psc];
