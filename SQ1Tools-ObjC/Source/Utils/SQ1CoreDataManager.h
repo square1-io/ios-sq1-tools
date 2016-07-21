@@ -19,8 +19,10 @@
 - (void)saveContextAndWait:(BOOL)wait
                 completion:(void (^)(NSError *error))completion;
 
+- (NSManagedObject *)newObjectInContext:(NSManagedObjectContext *)moc
+                             entityName:(NSString *)entityName;
 - (NSManagedObject *)newObjectInContextWithEntityName:(NSString *)entityName;
-- (NSManagedObject *)newObjectOutOfContextWithEntityName:(NSString *)entityName;
+
 
 - (NSManagedObjectContext *)newChildContextWithConcurrencyType:(NSManagedObjectContextConcurrencyType)concurrencyType;
 

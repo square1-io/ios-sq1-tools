@@ -200,25 +200,31 @@ static SQ1CoreDataManager *coreDataManager;
 
 - (NSManagedObject *)newObjectInContextWithEntityName:(NSString *)entityName
 {
+  return [self newObjectInContext:self.context entityName:entityName];
+}
+
+- (NSManagedObject *)newObjectInContext:(NSManagedObjectContext *)moc
+                             entityName:(NSString *)entityName
+{
   NSEntityDescription *entityDescription = [NSEntityDescription entityForName:entityName
-                                                       inManagedObjectContext:self.context];
+                                                       inManagedObjectContext:moc];
   
   NSManagedObject *newObject = [[NSManagedObject alloc] initWithEntity:entityDescription
-                                        insertIntoManagedObjectContext:self.context];
+                                        insertIntoManagedObjectContext:moc];
   
   return newObject;
 }
 
-- (NSManagedObject *)newObjectOutOfContextWithEntityName:(NSString *)entityName
-{
-  NSEntityDescription *entityDescription = [NSEntityDescription entityForName:entityName
-                                                       inManagedObjectContext:self.context];
-  
-  NSManagedObject *newObject = [[NSManagedObject alloc] initWithEntity:entityDescription
-                                        insertIntoManagedObjectContext:nil];
-  
-  return newObject;
-}
+//- (NSManagedObject *)newObjectOutOfContextWithEntityName:(NSString *)entityName
+//{
+//  NSEntityDescription *entityDescription = [NSEntityDescription entityForName:entityName
+//                                                       inManagedObjectContext:self.context];
+//  
+//  NSManagedObject *newObject = [[NSManagedObject alloc] initWithEntity:entityDescription
+//                                        insertIntoManagedObjectContext:nil];
+//  
+//  return newObject;
+//}
 
 #pragma mark - Delete Object
 
