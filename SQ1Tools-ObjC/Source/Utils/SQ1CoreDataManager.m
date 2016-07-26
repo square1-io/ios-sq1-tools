@@ -281,8 +281,17 @@ static SQ1CoreDataManager *coreDataManager;
 - (NSManagedObject *)findObjectWithClassName:(NSString *)className
                                    predicate:(NSPredicate *)predicate
 {
+  return [self findObjectWithClassName:className
+                       sortDescriptors:nil
+                             predicate:predicate];
+}
+
+- (NSManagedObject *)findObjectWithClassName:(NSString *)className
+                             sortDescriptors:(NSArray *)sortDescriptors
+                                   predicate:(NSPredicate *)predicate
+{
   NSArray *results = [self findAllObjectsWithClassName:className
-                                       sortDescriptors:nil
+                                       sortDescriptors:sortDescriptors
                                              predicate:predicate];
   return results.firstObject;
 }

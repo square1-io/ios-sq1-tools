@@ -42,6 +42,10 @@
                                predicate:(NSPredicate *)predicate;
 
 - (NSManagedObject *)findObjectWithClassName:(NSString *)className
+                             sortDescriptors:(NSArray *)sortDescriptors
+                                   predicate:(NSPredicate *)predicate;
+
+- (NSManagedObject *)findObjectWithClassName:(NSString *)className
                                    predicate:(NSPredicate *)predicate;
 
 @end
