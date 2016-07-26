@@ -38,6 +38,19 @@
   return [dateFormatter dateFromString:self];
 }
 
+- (NSDate *)sq1_dateWithFormat:(NSString *)dateFormat timeZone:(NSTimeZone *)timeZone
+{
+  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateFormat:dateFormat];
+  
+  if (timeZone) {
+    [dateFormatter setTimeZone:timeZone];
+  }
+  
+  return [dateFormatter dateFromString:self];
+}
+
+
 - (NSString*)sq1_trimmedString
 {
   return  [self stringByTrimmingCharactersInSet:

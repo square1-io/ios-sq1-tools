@@ -24,5 +24,17 @@
   return [dateFormatter stringFromDate:self];
 }
 
+- (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat timeZone:(NSTimeZone *)timeZone
+{
+  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateFormat:dateFormat];
+  
+  if (timeZone) {
+    [dateFormatter setTimeZone:timeZone];
+  }
+  
+  return [dateFormatter stringFromDate:self];
+}
+
 
 @end

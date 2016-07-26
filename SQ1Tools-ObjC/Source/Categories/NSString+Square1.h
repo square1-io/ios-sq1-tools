@@ -12,6 +12,7 @@
 
 - (BOOL)sq1_validEmail:(BOOL)strict;
 - (NSDate *)sq1_dateWithFormat:(NSString *)dateFormat;
+- (NSDate *)sq1_dateWithFormat:(NSString *)dateFormat timeZone:(NSTimeZone *)timeZone;
 - (NSString*)sq1_trimmedString;
 - (BOOL)sq1_empty;
 

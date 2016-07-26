@@ -11,5 +11,6 @@
 @interface NSDate (Square1)
 
 - (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat;
+- (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat timeZone:(NSTimeZone *)timeZone;
 
 @end
