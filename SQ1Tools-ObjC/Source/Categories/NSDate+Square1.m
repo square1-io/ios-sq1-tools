@@ -11,6 +11,16 @@
 
 @implementation NSDate (Square1)
 
++ (BOOL)is12hFormatEnabled
+{
+  NSString *formatStringForHours = [NSDateFormatter dateFormatFromTemplate:@"j"
+                                                                   options:0
+                                                                    locale:[NSLocale currentLocale]];
+  NSRange containsA = [formatStringForHours rangeOfString:@"a"];
+  return containsA.location != NSNotFound;
+}
+
+
 - (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat
 {
   NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
