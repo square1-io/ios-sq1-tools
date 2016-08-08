@@ -24,7 +24,8 @@
 {
   [self sq1_showAlert:message
                 title:title
-       confirmHandler:okHandler];
+       confirmHandler:okHandler
+        cancelHandler:nil];
 }
 
 
