@@ -38,6 +38,8 @@
 		201DDDB41D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DDDB21D21648C003712B4 /* SQ1ReplaceRootControllerSegue.m */; };
 		206A16881D228B4D00607FE7 /* SQ1Basics.h in Headers */ = {isa = PBXBuildFile; fileRef = 206A16861D228B4D00607FE7 /* SQ1Basics.h */; };
 		206A16891D228B4D00607FE7 /* SQ1Basics.m in Sources */ = {isa = PBXBuildFile; fileRef = 206A16871D228B4D00607FE7 /* SQ1Basics.m */; };
+		D987988A1D58849300AECD45 /* UIViewController+Square1.h in Headers */ = {isa = PBXBuildFile; fileRef = D98798881D58849300AECD45 /* UIViewController+Square1.h */; };
+		D987988B1D58849300AECD45 /* UIViewController+Square1.m in Sources */ = {isa = PBXBuildFile; fileRef = D98798891D58849300AECD45 /* UIViewController+Square1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +77,8 @@
 		206A16851D22692200607FE7 /* SQ1Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQ1Constants.h; sourceTree = "<group>"; };
 		206A16861D228B4D00607FE7 /* SQ1Basics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQ1Basics.h; sourceTree = "<group>"; };
 		206A16871D228B4D00607FE7 /* SQ1Basics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQ1Basics.m; sourceTree = "<group>"; };
+		D98798881D58849300AECD45 /* UIViewController+Square1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Square1.h"; sourceTree = "<group>"; };
+		D98798891D58849300AECD45 /* UIViewController+Square1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Square1.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				201DDDAD1D215F08003712B4 /* NSDictionary+Square1.m */,
 				2013CA881D2560450098066E /* UIImage+Square1.h */,
 				2013CA891D2560450098066E /* UIImage+Square1.m */,
+				D98798881D58849300AECD45 /* UIViewController+Square1.h */,
+				D98798891D58849300AECD45 /* UIViewController+Square1.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 				201DDDAE1D215F08003712B4 /* NSDictionary+Square1.h in Headers */,
 				201DDD8B1D212170003712B4 /* NSString+Square1.h in Headers */,
 				201DDD5E1D210C9D003712B4 /* SQ1Tools_ObjC.h in Headers */,
+				D987988A1D58849300AECD45 /* UIViewController+Square1.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 				201DDD901D212170003712B4 /* SQ1RemoteNotifications.m in Sources */,
 				201DDDA21D213F68003712B4 /* NSData+Square1.m in Sources */,
 				201DDD8A1D212170003712B4 /* NSDate+Square1.m in Sources */,
+				D987988B1D58849300AECD45 /* UIViewController+Square1.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
