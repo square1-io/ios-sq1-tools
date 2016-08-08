@@ -11,7 +11,28 @@
 
 @implementation NSDate (Square1)
 
-+ (BOOL)is12hFormatEnabled
++ (NSDate *)sq1_dateWithDate:(NSDate *)date
+                     andTime:(NSDate *)time
+{
+  NSCalendar *calendar = [NSCalendar currentCalendar];
+  
+  NSDateComponents *dateComponents = [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
+  NSDateComponents *timeComponents = [calendar components:NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:time];
+  
+  NSDateComponents *newDateComponents = [[NSDateComponents alloc] init];
+  
+  newDateComponents.year = dateComponents.year;
+  newDateComponents.month = dateComponents.month;
+  newDateComponents.day = dateComponents.day;
+  newDateComponents.hour = timeComponents.hour;
+  newDateComponents.minute = timeComponents.minute;
+  newDateComponents.second = timeComponents.second;
+  
+  return [calendar dateFromComponents:newDateComponents];
+}
+
+
++ (BOOL)sq1_is12hFormatEnabled
 {
   NSString *formatStringForHours = [NSDateFormatter dateFormatFromTemplate:@"j"
                                                                    options:0

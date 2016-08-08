@@ -10,8 +10,12 @@
 
 @interface NSDate (Square1)
 
-+ (BOOL)is12hFormatEnabled;
++ (NSDate *)sq1_dateWithDate:(NSDate *)date
+                     andTime:(NSDate *)time;
+
++ (BOOL)sq1_is12hFormatEnabled;
 - (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat;
-- (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat timeZone:(NSTimeZone *)timeZone;
+- (NSString *)sq1_displayDateWithFormat:(NSString *)dateFormat
+                               timeZone:(NSTimeZone *)timeZone;
 
 @end
