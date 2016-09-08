@@ -80,6 +80,9 @@
   
   NSString *uri = [stringData sq1_base64EncodedString];
   
+  uri = [uri stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
+  uri = [uri stringByReplacingOccurrencesOfString:@"+" withString:@"-"];
+
   // Compose request URL
   NSURL *requestURL = [NSURL URLWithString:_host];
   requestURL = [requestURL URLByAppendingPathComponent:_key];
