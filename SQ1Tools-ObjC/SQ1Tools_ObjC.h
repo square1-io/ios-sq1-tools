@@ -14,6 +14,11 @@ FOUNDATION_EXPORT double SQ1Tools_ObjCVersionNumber;
 //! Project version string for SQ1Tools-ObjC.
 FOUNDATION_EXPORT const unsigned char SQ1Tools_ObjCVersionString[];
 
+// Core Data
+
+#import <SQ1Tools_ObjC/SQ1CoreDataManager.h>
+#import <SQ1Tools_ObjC/NSManagedObject+Square1.h>
+
 // Helpers
 
 #import <SQ1Tools_ObjC/SQ1UUID.h>
@@ -36,7 +41,7 @@ FOUNDATION_EXPORT const unsigned char SQ1Tools_ObjCVersionString[];
 // Utils
 
 #import <SQ1Tools_ObjC/SQ1ResizedService.h>
-#import <SQ1Tools_ObjC/SQ1CoreDataManager.h>
+
 
 // Segue
 
