@@ -7,6 +7,7 @@
 //
 
 #import "SQ1CoreDataManager.h"
+#import "NSManagedObject+Square1.h"
 #import "SQ1Constants.h"
 
 @interface SQ1CoreDataManager()
@@ -215,16 +216,6 @@ static SQ1CoreDataManager *coreDataManager;
   return newObject;
 }
 
-//- (NSManagedObject *)newObjectOutOfContextWithEntityName:(NSString *)entityName
-//{
-//  NSEntityDescription *entityDescription = [NSEntityDescription entityForName:entityName
-//                                                       inManagedObjectContext:self.context];
-//  
-//  NSManagedObject *newObject = [[NSManagedObject alloc] initWithEntity:entityDescription
-//                                        insertIntoManagedObjectContext:nil];
-//  
-//  return newObject;
-//}
 
 #pragma mark - Delete Object
 
