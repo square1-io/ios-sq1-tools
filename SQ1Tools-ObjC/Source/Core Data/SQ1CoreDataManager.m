@@ -72,7 +72,8 @@ static SQ1CoreDataManager *coreDataManager;
   NSAssert(_psc, @"Persistent Store Coordinator is nil");
   
   NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite", _modelName]];
-  NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: @YES};
+  NSDictionary *options = @{NSMigratePersistentStoresAutomaticallyOption: [NSNumber numberWithBool:YES],
+                            NSInferMappingModelAutomaticallyOption: [NSNumber numberWithBool:YES]};
   
   NSError *error = nil;
   if(![self.psc addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:options error:&error]) {
